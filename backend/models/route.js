@@ -29,4 +29,4 @@ const routeSchema = new mongoose.Schema({
 
 routeSchema.index({ name: 'text', from: 'text', to: 'text', routeNumber: 'text' });
 
-module.exports = mongoose.model('Route', routeSchema);
+module.exports = mongoose.model('route',routeSchema);
