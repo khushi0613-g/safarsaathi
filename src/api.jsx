@@ -1,8 +1,8 @@
 // Central API configuration
 // All fetch calls go through here
 
-const BASE_URL = 'http://localhost:5000/api';
-export const WS_URL = 'ws://localhost:5000/ws/buses';
+const BASE_URL = 'https://safarsaathi-backend-mdh1.onrender.com/api';
+export const WS_URL = 'wss://safarsaathi-backend-mdh1.onrender.com/ws/buses';
 
 // Helper — attach JWT token to requests if logged in
 const authHeaders = () => {
