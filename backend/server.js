@@ -14,10 +14,12 @@ connectDB();
 
 
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:5173',
-  credentials: true,
+  origin: [
+    'http://localhost:5173',
+    'https://safarsaathi-frontend.onrender.com'
+  ],
+  credentials: true
 }));
-app.use(express.json());
 
 
 app.use('/api/auth',    require('./routes/auth'));
